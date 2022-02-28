@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.9" client="site" method="upgrade">
+    <name>Pogoda długoterminowa</name>
+    <version>1.0.0</version>
+    <creationDate>2021-11-17</creationDate>
+    <copyright>Copyright 2021 Seweryn Kruk. All rights reserved.</copyright>
+    <author>Seweryn Kruk</author>
+    <description>Moduł pogodowy</description>
+    <files>
+        <filename module="mod_pogoda">mod_pogoda.php</filename>
+        <folder plugin="mod_pogoda">tmpl</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="api key" type="textarea" default="" label="Wpisz api key owf" description="" rows="1" cols="200" filter="raw"/>
+                <field name="api key lon lat" type="textarea" default="" label="Wpisz api key lociq" description="" rows="1" cols="200" filter="raw"/>
+                <field name="miasto" type="textarea" default="" label="Wpisz miasto" description="" rows="1" cols="200" filter="raw"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
